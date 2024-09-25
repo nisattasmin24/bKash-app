@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bKash App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>bKash App</h1>
+        <div class="menu">
+            <button id="sendMoneyBtn">Send Money</button>
+            <button id="checkBalanceBtn">Check Balance</button>
+            <button id="payBillBtn">Pay Bill</button>
+        </div>
+
+        <!-- Send Money Section Created -->
+        <div id="sendMoneySection" class="section hidden">
+            <h2>Send Money</h2>
+            <label for="recipientNumber">Recipient Number:</label>
+            <input type="text" id="recipientNumber" placeholder="Enter recipient's number">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount">
+            <button id="sendMoneySubmit">Send</button>
+            <div id="sendMoneyMessage" class="message"></div>
+        </div>
+
+        <!-- Check Balance Section -->
+        <div id="checkBalanceSection" class="section hidden">
+            <h2>Your Balance</h2>
+            <p id="balanceAmount">$500.00</p> <!-- Mock balance -->
+        </div>
+
+        <!-- Pay Bill Section -->
+        <div id="payBillSection" class="section hidden">
+            <h2>Pay Bill</h2>
+            <label for="billAmount">Bill Amount:</label>
+            <input type="number" id="billAmount" placeholder="Enter bill amount">
+            <button id="payBillSubmit">Pay</button>
+            <div id="payBillMessage" class="message"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
